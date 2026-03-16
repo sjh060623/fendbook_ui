@@ -22,10 +22,10 @@ export default function ReactPage() {
             <div className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-3xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 shadow-[0_0_30px_rgba(99,102,241,0.3)] dark:shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               <span className="text-4xl font-black text-white">⚙️</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight drop-shadow-md">
+            <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight drop-shadow-md">
               React 실전 면접
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-white/70 font-light max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 dark:text-white/70 font-light max-w-2xl mx-auto">
               Virtual DOM, Hooks, 상태 관리 및 렌더링 최적화 등 리액트 생태계의
               핵심 개념들을 체계적으로 정리했습니다.
             </p>

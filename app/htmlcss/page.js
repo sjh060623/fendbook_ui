@@ -100,14 +100,14 @@ const AccordionItem = ({ item, index, isOpen, onClick }) => {
       }`}
     >
       <button
-        className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none"
+        className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
         onClick={onClick}
       >
-        <div className="flex items-start gap-4 md:gap-6">
+        <div className="flex items-start gap-4">
           <span className="shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 font-bold text-lg">
             Q{index + 1}
           </span>
-          <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-wide mt-1">
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-wide mt-1">
             {item.question}
           </h3>
         </div>
@@ -143,11 +143,11 @@ const AccordionItem = ({ item, index, isOpen, onClick }) => {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="px-6 md:px-8 pb-8 pt-2 ml-14 md:ml-16 border-t border-slate-200 dark:border-white/5">
+            <div className="px-6 pb-8 pt-2 ml-14 border-t border-slate-200 dark:border-white/5">
               <h4 className="text-lg font-bold text-indigo-600 dark:text-indigo-300 mb-4 pt-6 flex items-center gap-2">
                 <span className="text-2xl">💡</span> Answer
               </h4>
-              <div className="text-base md:text-lg text-slate-700 dark:text-white/80 leading-relaxed whitespace-pre-wrap font-light">
+              <div className="text-base text-slate-700 dark:text-white/80 leading-relaxed whitespace-pre-wrap font-light">
                 {item.answer}
               </div>
 
@@ -185,7 +185,7 @@ export default function HtmlCssAccordionPage() {
       <div className="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-blue-300/30 dark:bg-blue-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-60 pointer-events-none"></div>
       <div className="fixed bottom-[-10%] left-[20%] w-[1000px] h-[1000px] bg-indigo-400/30 dark:bg-indigo-800/30 rounded-full mix-blend-screen filter blur-[200px] opacity-80 pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-60">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-40">
         <header className="mb-16 text-center border-b border-slate-200 dark:border-white/10 pb-12">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -195,17 +195,17 @@ export default function HtmlCssAccordionPage() {
             <div className="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-3xl bg-linear-to-br from-indigo-500 via-purple-500 to-pink-500 shadow-[0_0_30px_rgba(99,102,241,0.3)] dark:shadow-[0_0_40px_rgba(168,85,247,0.4)]">
               <span className="text-3xl font-black text-white">{"</>"}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight drop-shadow-md">
+            <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white mb-2 tracking-tight drop-shadow-md">
               HTML / CSS 실전 면접
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-white/70 font-light max-w-2xl mx-auto">
+            <p className="text-sm text-slate-600 dark:text-white/70 font-light max-w-2xl mx-auto">
               마크업과 스타일링의 기초부터 실무 면접에서 자주 나오는 핵심
               개념들을 체계적으로 정리했습니다.
             </p>
           </motion.div>
         </header>
 
-        <section className="flex flex-col gap-4 md:gap-6">
+        <section className="flex flex-col gap-4">
           {htmlCssQuestions.map((item, index) => (
             <AccordionItem
               key={item.id}

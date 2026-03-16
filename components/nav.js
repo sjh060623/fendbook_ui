@@ -24,10 +24,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-4 inset-x-0 mx-auto w-full max-w-[2500px] px-6 z-50">
-      <nav className="flex items-center justify-between px-10 py-8 bg-white/60 dark:bg-[#1a1a24]/50 backdrop-blur-xl border border-white/50 dark:border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all">
+    <header className="fixed top-4 inset-x-0 mx-auto w-full max-w-[1200px] px-6 z-50">
+      <nav className="flex items-center justify-between px-10 py-4 bg-white/60 dark:bg-[#1a1a24]/50 backdrop-blur-xl border border-white/50 dark:border-white/10 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all">
         <Link href="/">
-          <div className="flex items-center gap-2 text-3xl font-bold cursor-pointer">
+          <div className="flex items-center gap-2 text-xl font-bold cursor-pointer">
             <span className="text-indigo-600 dark:text-indigo-400">
               {"</>"}
             </span>
@@ -36,7 +36,7 @@ export default function Navbar() {
             </span>
           </div>
         </Link>
-        <ul className="hidden md:flex items-center gap-2 text-2xl font-medium text-slate-700 dark:text-white">
+        <ul className="hidden md:flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-white">
           <Link href="/htmlcss">
             <li
               className={`px-5 py-3 rounded-2xl transition cursor-pointer flex items-center gap-2 hover:text-indigo-600 dark:hover:text-indigo-200 ${

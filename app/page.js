@@ -10,16 +10,16 @@ export default function FendbookPage() {
       <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] bg-pink-300/30 dark:bg-pink-600/30 rounded-full mix-blend-screen filter blur-[100px] opacity-60 pointer-events-none"></div>
       <div className="absolute bottom-[10%] left-[20%] w-[600px] h-[600px] bg-indigo-400/30 dark:bg-indigo-800/40 rounded-full mix-blend-screen filter blur-[150px] opacity-80 pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-[2500px] w-full mx-auto px-6 py-8 pt-50">
+      <div className="relative z-10 max-w-[1200px] w-full mx-auto px-6 py-8 pt-50">
         <section className="flex flex-col items-center text-center mb-16">
           <div className="flex animate-shake items-center justify-center w-24 h-24 mb-8 rounded-4xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 shadow-[0_0_30px_rgba(99,102,241,0.3)] dark:shadow-[0_0_40px_rgba(99,102,241,0.4)] border border-white/50 dark:border-white/20">
             <span className="text-4xl font-black text-white">{"</>"}</span>
           </div>
 
-          <h1 className="text-7xl font-bold mb-4 tracking-tight text-slate-900 dark:text-white">
+          <h1 className="text-5xl font-bold mb-4 tracking-tight text-slate-900 dark:text-white">
             팬드북 (FEndbook)
           </h1>
-          <p className="text-2xl text-slate-600 dark:text-gray-300 mb-8 font-light">
+          <p className="text-lg text-slate-600 dark:text-gray-300 mb-8 font-light">
             프론트엔드 실무 면접 준비를 위한 체계적인 내용 정리 플랫폼
           </p>
 
@@ -37,8 +37,8 @@ export default function FendbookPage() {
         </section>
 
         {/*  */}
-        <section className="max-w-[2400px] mx-auto mb-32">
-          <div className="relative p-8 md:p-10 rounded-3xl bg-white/60 dark:bg-[#1c1c27]/40 backdrop-blur-2xl border border-white/50 dark:border-white/10 shadow-sm dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+        <section className="max-w-[1200px] mx-auto mb-32">
+          <div className="relative p-8 rounded-3xl bg-white/60 dark:bg-[#1c1c27]/40 backdrop-blur-2xl border border-white/50 dark:border-white/10 shadow-sm dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
             <div className="absolute top-0 left-10 w-32 h-px bg-gradient-to-r from-transparent via-indigo-400 to-transparent opacity-50"></div>
 
             <h2 className="text-4xl font-bold mb-6 text-slate-900 dark:text-white tracking-wide">
@@ -65,7 +65,7 @@ export default function FendbookPage() {
           <h2 className="text-3xl font-bold mb-10 text-center tracking-wide text-slate-900 dark:text-white">
             카테고리
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* hrmlcss */}
             <Link href="/htmlcss">
               <div className="flex flex-col p-7 rounded-2xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-200 dark:border-white/10 hover:-translate-y-1 hover:border-orange-500/50 dark:hover:border-orange-500/50 hover:bg-white/90 dark:hover:bg-white/10 transition-all duration-300 group shadow-sm dark:shadow-lg">
@@ -174,17 +174,17 @@ export default function FendbookPage() {
         </section>
 
         <section className="max-w-[2400px] mx-auto">
-          <div className="relative rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-600 p-12 md:p-16 text-center shadow-lg dark:shadow-[0_0_50px_rgba(99,102,241,0.3)] overflow-hidden">
+          <div className="relative rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-600 p-12 text-center shadow-lg dark:shadow-[0_0_50px_rgba(99,102,241,0.3)] overflow-hidden">
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
 
             <div className="relative z-10">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white tracking-tight">
+              <h2 className="text-2xl font-bold mb-4 text-white tracking-tight">
                 지금 바로 시작하세요!
               </h2>
-              <p className="text-white/90 text-sm md:text-base mb-10 font-light">
+              <p className="text-white/90 text-sm mb-10 font-light">
                 체계적인 학습으로 프론트엔드 실무 면접을 완벽하게 준비하세요
               </p>
-              <button className="inline-flex items-center gap-2 text-sm md:text-base font-semibold text-white hover:text-white/80 transition-all cursor-pointer group bg-white/20 px-6 py-3 rounded-full hover:bg-white/30">
+              <button className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-white/80 transition-all cursor-pointer group bg-white/20 px-6 py-3 rounded-full hover:bg-white/30">
                 학습 시작하기{" "}
                 <span className="text-lg group-hover:translate-x-1 transition-transform">
                   →
